@@ -17,6 +17,7 @@ class BMRMessageConverter extends AbstractHttpMessageConverter<BMRDto> {
         super(MediaType.TEXT_PLAIN);
     }
 
+
     @Override
     protected boolean supports(Class<?> clazz) {
         return BMRDto.class.equals(clazz);
